@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Route</title>
+    <style>
+        #map {
+            height: 700px;
+            width: 100%;
+
+        } 
+    </style>
+    <style>
+
+    </style>
+    <script type="module" src="./m2.js" defer></script>
+</head>
+<body>
+    <form id="numberForm" style=" top: 10px; padding-left: 25%; margin-top: 10px; margin-bottom: 10px; padding-right: 20%;" method="post">
+        <label for="numb">Enter a Starting time:</label>
+        <input type="time" id="numbstr" value="07:00" name="numbstr" required>
+        <label for="numb">Enter a Ending time:</label>
+        <input type="time" id="numbend"  value="08:00" name="numbend" required>
+        <button type="button" onclick="initMap()">Submit</button>
+    </form>
+    <div id="map"></div>
+    
+    <!-- <div class = "image-container" id="scale">
+        <img src="scale.png" class="bottom-right-image">
+    </div> -->
+    <div id="minmax">   </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtBAu7yPKe-hNQ9Xa3v70IhsXGgP9y1rE" async defer></script>
+    
+    
+</body>
+</html>
